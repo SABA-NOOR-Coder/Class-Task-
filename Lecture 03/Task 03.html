@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Table</title>
+    <link rel="stylesheet" href="style 03.css">
+    
+</head>
+<body>
+
+    <h2>Billing Table</h2>
+    
+    <table>
+        <tr>
+            <th>Sr#</th>
+            <th>Item</th>
+            <th>Unit Cost</th>
+            <th>Quantity</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Item 1</td>
+            <td>58</td>
+            <td><input type="number" id="qty1" min="0"></td>
+            <td id="cost1">0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Item 2</td>
+            <td>46</td>
+            <td><input type="number" id="qty2" min="0"></td>
+            <td id="cost2">0</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Item 3</td>
+            <td>1090</td>
+            <td><input type="number" id="qty3" min="0"></td>
+            <td id="cost3">0</td>
+        </tr>
+        <tr>
+            <td colspan="4">Total</td>
+            <td id="total">0</td>
+        </tr>
+        <tr>
+            <td colspan="4">GST (15%)</td>
+            <td id="gst">0</td>
+        </tr>
+        <tr>
+            <td colspan="4"><b>Grand Total</b></td>
+            <td id="grandTotal"><b>0</b></td>
+        </tr>
+    </table>
+
+    <button onclick="calculateTotal()">Calculate</button>
+
+</body>
+</html>

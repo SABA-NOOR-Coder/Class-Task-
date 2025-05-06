@@ -1,0 +1,192 @@
+/* Global styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+/* Navigation Bar Styles */
+.navigation-bar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navigation-bar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation-bar nav ul li {
+    display: inline-block;
+}
+
+.navigation-bar nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+.navigation-bar nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.con {
+    height: 500px;
+    background-image: url("Shahi_Masjid_Lahore\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding: 50px;
+}
+
+/* Main Content */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.d1 {
+    width: 70%;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.intro pre {
+    font-size: 17px;
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 1.4;
+}
+
+.intro ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.intro ul li {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.intro p {
+    color: red;
+}
+
+.intro a {
+    color: blue;
+    text-decoration: none;
+}
+
+.important-dates h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.important-dates td {
+    padding: 4px;
+}
+
+.d2 {
+    width: 30%;
+    text-align: center;
+}
+
+.p2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.venue {
+    font-size: 17px;
+    color: black;
+    margin-top: 10px;
+}
+
+.links a {
+    font-size: 17px;
+    color: blue;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.image-wrapper img {
+    margin-top: 10px;
+    width: 300px;
+}
+
+/* Sponsors Section */
+.sponsors-section {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.sponsors-header {
+    background-color: #333;
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+}
+
+.sponsors-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sponsors-logos img {
+    max-width: 180px;
+    max-height: 180px;
+}
+/* Responsive Design */
+@media only screen (min-width: 450px) {
+    .navigation-bar nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation-bar nav ul li {
+        width: 100%;
+    }
+    .con2 {
+        font-size: 28px;
+        padding: 15px;
+        width: 90%;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .d1, .d2 {
+        width: 100%;
+    }
+    .image-wrapper img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+   
